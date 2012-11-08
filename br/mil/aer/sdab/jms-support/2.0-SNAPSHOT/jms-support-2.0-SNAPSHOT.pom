@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>br.mil.aer.sdab</groupId>
+		<artifactId>sia-apis</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>jms-support</artifactId>
+	<name>FAB SIA TestContainer JMS Support</name>
+	<dependencies>
+		<dependency>
+			<groupId>org.mycontainer</groupId>
+			<artifactId>mycontainer-kernel</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mycontainer</groupId>
+			<artifactId>mycontainer-ejb</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mycontainer</groupId>
+			<artifactId>mycontainer-datasource</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-core</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+	</dependencies>
+</project>

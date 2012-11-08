@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="SIA">
+  <publishDate position="left" format="dd-MM-yyyy" />
+  <skin>
+    <groupId>br.com.dextra.lib</groupId>
+    <artifactId>maven-dextra-skin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </skin>
+  <body>
+    <links>
+      <item name="Dextra" href="http://www.dextra.com.br" />
+      <item name="Wiki" href="http://dextranet.dextra.com.br/tracker/fab_sia" />
+    </links>
+    <menu name="Módulo" inherit="bottom" ref="modules">
+      <item name="FAB SIA Data" href="sia-data/index.html" />
+      <item name="FAB SIA Persistence Unit" href="sia-pu/index.html" />
+      <item name="FAB SIA Common EJB Implementation" href="common-ejb/index.html" />
+      <item name="FAB SIA Sequence" href="sia-sequence/index.html" />
+      <item name="FAB SIA Address EJB Implementation" href="address-ejb/index.html" />
+      <item name="FAB SIA Supplier EJB Implementation" href="supplier-ejb/index.html" />
+      <item name="FAB SIA Accounting EJB Implementation" href="accounting-ejb/index.html" />
+      <item name="FAB SIA Document Manager EJB/JCR Implementation" href="document-ejb/index.html" />
+      <item name="FAB SIA User EJB Implementation" href="siauser-ejb/index.html" />
+      <item name="FAB SIA Tasks EJB Implementation" href="tasks-ejb/index.html" />
+      <item name="FAB SIA Purchase Requisition EJB Implementation" href="purchaserequisition-ejb/index.html" />
+      <item name="FAB SIA Tender EJB Implementation" href="tender-ejb/index.html" />
+      <item name="FAB SIA Noconcurrency Tender EJB Implementation" href="noconcurrency-tender-ejb/index.html" />
+      <item name="FAB SIA Acquisition Importer EJB Implementation" href="acquisition-importer-ejb/index.html" />
+      <item name="FAB SIA Note Order EJB Implementation" href="noteorder-ejb/index.html" />
+      <item name="FAB SIA Receiving EJB Implementation" href="receiving-ejb/index.html" />
+      <item name="FAB SIA EJB Implementation" href="sia-ejb/index.html" />
+      <item name="FAB SIA Objeto Aquisicao EJB Implementation" href="objeto-aquisicao-ejb/index.html" />
+      <item name="FAB SIA Integration EJB Implementation" href="integration-ejb/index.html" />
+    </menu>
+    <menu inherit="bottom" ref="reports" />
+  </body>
+</project>

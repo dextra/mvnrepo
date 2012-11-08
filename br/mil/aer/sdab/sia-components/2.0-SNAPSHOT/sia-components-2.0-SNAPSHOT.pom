@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>br.mil.aer.sdab</groupId>
+    <artifactId>sia-components</artifactId>
+    <packaging>pom</packaging>
+    <name>FAB SIA Tapestry Components</name>
+    <parent>
+        <groupId>br.mil.aer.sdab</groupId>
+        <artifactId>sia-servlets</artifactId>
+        <version>2.0-SNAPSHOT</version>
+    </parent>
+    <modules>
+        <module>supplier-components</module>
+        <module>tender-components</module>
+        <module>purchaserequisition-components</module>        
+	<module>sia-layout</module>
+	<module>accounting-components</module>
+	<module>objetoaquisicao-components</module>
+	<module>noteorder-components</module>
+	<module>receiving-components</module>
+	<module>siauser-components</module>
+	<module>siaweb-components</module>
+	<module>planotrabalhoanual-components</module>
+    </modules>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tapestry</groupId>
+                <artifactId>tapestry-component-report</artifactId>
+                <version>${tapestry-release-version}</version>
+                <configuration>
+                    <rootPackage>br.mil.aer.sdab.sia.web</rootPackage>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+    <dependencyManagement>
+    	<dependencies>
+    		    <dependency>
+    		    	<groupId>org.apache.tapestry</groupId>
+    		    	<artifactId>tapestry-core</artifactId>
+    		    	<version>${tapestry-release-version}</version>
+    		    	<exclusions>
+    		    		<exclusion>
+    		    			<groupId>jboss</groupId>
+    		    			<artifactId>javassist</artifactId>
+    		    		</exclusion>
+    		    	</exclusions>
+    		    </dependency>
+    	</dependencies>
+    </dependencyManagement>
+</project>

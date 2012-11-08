@@ -1,0 +1,7 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ireport</groupId>
+  <artifactId>ireport</artifactId>
+  <version>1.2.7</version>
+  <name>ireport</name>
+</project>

@@ -1,0 +1,67 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.mil.aer.sdab</groupId>
+  <artifactId>devel</artifactId>
+  <packaging>pom</packaging>
+  <version>2.0-SNAPSHOT</version>
+  <url>https://dextranet.dextra.com.br/tracker/fab_sia/chrome/site/maven</url>
+  <name>FAB SIA</name>
+
+  <modules>
+    <module>implementation</module>
+  </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <configuration>
+          <locales>pt_BR,en</locales>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <ciManagement>
+    <system>continuum</system>
+    <url>http://172.16.129.2:8081/continuum</url>
+    <notifiers>
+      <notifier>
+        <type>mail</type>
+        <sendOnError>true</sendOnError>
+        <sendOnFailure>true</sendOnFailure>
+        <sendOnSuccess>false</sendOnSuccess>
+        <sendOnWarning>false</sendOnWarning>
+        <configuration><address>pinazo@dextra-sw.com</address></configuration>
+      </notifier>
+    </notifiers>
+  </ciManagement>
+  <issueManagement>
+    <system>Trac</system>
+    <url>http://dextranet.dextra.com.br/tracker/fab_sia/newticket</url>
+  </issueManagement>
+  <distributionManagement>
+      <site>
+          <id>sia</id>
+          <!--
+          <url>file:///tmp/maven</url>
+          -->
+          <url>scp://zenon/projects/trac/fab_sia/htdocs/maven</url>
+      </site>
+              <repository>
+	                        <id>fab_sia-f2</id>
+	                        <name>SIA Fase 2</name>
+	                        <url>https://dextranet.dextra.com.br/archiva/repository/releases</url>
+	                </repository>
+	                <snapshotRepository>
+	                        <id>fab_sia-f2-snapshot</id>
+	                        <name>SIA Fase 2 Snapshots</name>
+	                        <url>https://dextranet.dextra.com.br/archiva/repository/snapshots</url>
+	                        <uniqueVersion>false</uniqueVersion>
+	                </snapshotRepository>
+ </distributionManagement>
+   <scm>
+     <url>https://dextranet.dextra.com.br/tracker/fab_sia/browser/trunk/devel</url>
+     <developerConnection>scm:svn:https://dextranet.dextra.com.br/svn/fab_sia/trunk</developerConnection>
+   </scm>
+</project>

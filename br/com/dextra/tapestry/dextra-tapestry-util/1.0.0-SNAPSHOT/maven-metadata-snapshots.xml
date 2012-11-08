@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>br.com.dextra.tapestry</groupId>
+  <artifactId>dextra-tapestry-util</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <buildNumber>2</buildNumber>
+      <timestamp>20081120.174835</timestamp>
+    </snapshot>
+    <lastUpdated>20081120174836</lastUpdated>
+  </versioning>
+</metadata>

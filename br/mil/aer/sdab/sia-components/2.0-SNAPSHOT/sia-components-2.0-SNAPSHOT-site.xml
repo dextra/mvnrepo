@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="SIA">
+  <publishDate position="left" format="dd-MM-yyyy" />
+  <skin>
+    <groupId>br.com.dextra.lib</groupId>
+    <artifactId>maven-dextra-skin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </skin>
+  <body>
+    <links>
+      <item name="Dextra" href="http://www.dextra.com.br" />
+      <item name="Wiki" href="http://dextranet.dextra.com.br/tracker/fab_sia" />
+    </links>
+    <menu name="Módulo" inherit="bottom" ref="modules">
+      <item name="FAB SIA Layout Tapestry Components" href="sia-layout/index.html" />
+      <item name="FAB SIA Supplier Tapestry Components" href="supplier-components/index.html" />
+      <item name="FAB SIA Tender Tapestry Components" href="tender-components/index.html" />
+      <item name="FAB SIA Objeto Aquisicao Tapestry Components" href="objetoaquisicao-components/index.html" />
+      <item name="FAB SIA Purchase Requisition Tapestry Components" href="purchaserequisition-components/index.html" />
+      <item name="FAB SIA Accounting Tapestry Components" href="accounting-components/index.html" />
+      <item name="FAB SIA Note Order Tapestry Components" href="noteorder-components/index.html" />
+      <item name="FAB SIA Receiving Tapestry Components" href="receiving-components/index.html" />
+      <item name="FAB SIA User Tapestry Components" href="siauser-components/index.html" />
+    </menu>
+    <menu inherit="bottom" ref="reports" />
+  </body>
+</project>
