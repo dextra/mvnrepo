@@ -20,12 +20,14 @@
 		<tag>jr-3-0-1</tag>
 		<url>http://jasperforge.org/sf/scm/do/viewRepositorySource/projects.jasperreports/scm.jasperreports</url>
 	</scm>
+<!--
 	<repositories>
 		<repository>
 			<id>jaspersoft</id>
 			<url>http://www.jasperforge.org/maven2</url>
 		</repository>
 	</repositories>
+-->
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
