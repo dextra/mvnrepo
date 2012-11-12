@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.pyrata.restitory</groupId>
+	<artifactId>restitory</artifactId>
+	<packaging>pom</packaging>
+	<name>restitory</name>
+
+	<parent>
+        	<groupId>org.pyrata.restitory</groupId>
+	        <artifactId>restitory-parent</artifactId>
+        	<version>1.0.2-SNAPSHOT</version>
+	        <relativePath>restitory-parent</relativePath>
+	</parent>
+
+	<scm>
+		<connection>scm:svn:http://sharedlabs.fuweweu.com/svn/trunk/restitory</connection>
+		<developerConnection>scm:svn:http://sharedlabs.fuweweu.com/svn/trunk/restitory</developerConnection>
+		<url>http://sharedlabs.fuweweu.com/svn/trunk/restitory</url>
+	</scm>
+
+
+	<modules>
+		<module>restitory-parent</module>
+		<!--
+		<module>restitory-ejb</module>
+		-->
+		<module>restitory-gae-web</module>
+	</modules>
+
+</project>
