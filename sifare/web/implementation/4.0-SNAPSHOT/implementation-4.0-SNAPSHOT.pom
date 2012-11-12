@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>sifare</groupId>
+		<artifactId>sifare</artifactId>
+		<version>4.0-SNAPSHOT</version>
+	</parent>
+	<groupId>sifare.web</groupId>
+	<artifactId>implementation</artifactId>
+	<packaging>pom</packaging>
+	<name>Sifareweb - Implementation</name>
+	<modules>
+		<module>ejbs</module>
+		<module>apis</module>
+		<module>ear</module>
+		<module>servlets</module>
+	</modules>
+
+	<profiles>
+		<profile>
+			<id>development</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>env</name>
+					<value>devel</value>
+				</property>
+			</activation>
+			<properties>
+				<hibernate.show_sql>false</hibernate.show_sql>
+				<hibernate.dialect>
+					org.hibernate.dialect.PostgreSQLDialect
+				</hibernate.dialect>
+				<hibernate.cacheProviderClass>
+					org.hibernate.cache.HashtableCacheProvider
+				</hibernate.cacheProviderClass>
+				<hibernate.datasource>SifarewebDS</hibernate.datasource>
+			</properties>
+		</profile>
+		<profile>
+			<id>staging</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>staging</value>
+				</property>
+			</activation>
+			<properties>
+				<hibernate.show_sql>false</hibernate.show_sql>
+				<hibernate.dialect>
+					org.hibernate.dialect.PostgreSQLDialect
+				</hibernate.dialect>
+				<hibernate.cacheProviderClass>
+					org.hibernate.cache.HashtableCacheProvider
+				</hibernate.cacheProviderClass>
+				<hibernate.datasource>
+					java:/SifarewebDS
+				</hibernate.datasource>
+			</properties>
+		</profile>
+	</profiles>
+</project>
