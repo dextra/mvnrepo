@@ -1,0 +1,21 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>sisubweb</groupId>
+	<artifactId>sisubweb-apis-persistence</artifactId>
+	<version>3.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>SISUBWEB APIs Persistence</name>
+	<parent>
+		<groupId>sisubweb</groupId>
+		<artifactId>sisubweb-apis</artifactId>
+		<version>3.0-SNAPSHOT</version>
+	</parent>
+	<modules>
+		<module>persistence-tools-local</module>
+		<module>persistence-tools-nacional</module>
+		<module>persistence-tools-nutricao-local</module>
+		<module>persistence-tools-nutricao-nacional</module>
+		<module>persistence-tools-ear-local</module>
+		<module>persistence-tools-ear-nacional</module>
+	</modules>
+</project>

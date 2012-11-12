@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sisubweb</groupId>
+  <artifactId>sisubweb-test-local</artifactId>
+  <packaging>jar</packaging>
+  <name>Sisubweb Test Local</name>
+  <parent>
+    <groupId>sisubweb</groupId>
+    <artifactId>tests</artifactId>
+    <version>3.0-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+    <dependency>
+      <groupId>sisubweb</groupId>
+      <artifactId>sisubweb-common-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>sisubweb</groupId>
+      <artifactId>sisubweb-local-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>sisubweb</groupId>
+      <artifactId>sisubweb-service-local-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+
+  </dependencies>
+
+</project>
+

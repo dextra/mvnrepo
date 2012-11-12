@@ -1,0 +1,33 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>sisubweb</groupId>
+	<artifactId>sisubweb-apis</artifactId>
+	<version>3.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>SISUBWEB APIs</name>
+	<parent>
+		<groupId>sisubweb</groupId>
+		<artifactId>sisubweb</artifactId>
+		<version>3.0-SNAPSHOT</version>
+	</parent>
+	<modules>
+		<module>persistence</module>
+		<module>test-tools</module>
+	        <module>sisubweb-common-api</module>
+	        <module>sisubweb-local-api</module>
+	        <module>sisubweb-nacional-api</module>
+	        <module>sisubweb-service-common-api</module>
+	        <module>sisubweb-service-local-api</module>
+	        <module>sisubweb-service-nacional-api</module>
+	    <module>nutricao-common-api</module>
+	    <module>nutricao-local-api</module>
+	    <module>nutricao-nacional-api</module>
+	<module>auth-api</module>
+	</modules>
+  <dependencies>
+		<dependency>
+			<groupId>jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+		</dependency>
+  </dependencies>
+</project>

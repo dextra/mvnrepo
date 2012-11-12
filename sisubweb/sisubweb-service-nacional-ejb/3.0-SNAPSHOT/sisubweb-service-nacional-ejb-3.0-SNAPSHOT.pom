@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>sisubweb</groupId>
+	<artifactId>sisubweb-service-nacional-ejb</artifactId>
+	<packaging>ejb</packaging>
+	<name>SISUBWEB Service Nacional EJB</name>
+	<parent>
+		<groupId>sisubweb</groupId>
+		<artifactId>sisubweb-ejbs</artifactId>
+		<version>3.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+ 		<dependency>
+			<groupId>sisubweb</groupId>
+			<artifactId>sisubweb-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>sisubweb</groupId>
+			<artifactId>sisubweb-nacional-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>sisubweb</groupId>
+			<artifactId>sisubweb-nacional-ejb</artifactId>
+			<type>ejb</type>
+		</dependency>
+	 	<dependency>
+			<groupId>sisubweb</groupId>
+			<artifactId>sisubweb-auth-ejb</artifactId>
+			<type>ejb</type>
+		</dependency>
+	 	<dependency>
+			<groupId>sisubweb</groupId>
+			<artifactId>sisubweb-service-nacional-api</artifactId>
+		</dependency>
+	 	<dependency>
+			<groupId>sisubweb</groupId>
+			<artifactId>sisubweb-nutricao-nacional-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>sisubweb</groupId>
+			<artifactId>sisubweb-base</artifactId>
+		</dependency>
+   		<dependency>
+			<groupId>sisubweb</groupId>
+			<artifactId>apps-utils</artifactId>
+            <scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+	</dependencies>
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jasperreports-maven-plugin</artifactId>
+                <version>1.0-beta-2</version>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile-reports</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+	</plugins>
+</build>
+</project>
