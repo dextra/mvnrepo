@@ -14,12 +14,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>purchaserequisition-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-api</artifactId>
+			<artifactId>sia-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -33,11 +28,6 @@
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>planotrabalhoanual-components</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tasks-api</artifactId>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>

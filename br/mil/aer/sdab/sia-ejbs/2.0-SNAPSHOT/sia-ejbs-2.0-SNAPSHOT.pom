@@ -11,6 +11,7 @@
 	</parent>
 	<modules>
 		<module>sia-pu</module>
+		<module>sifare-pu</module>
 		<module>common-ejb</module>
 		<module>sia-sequence</module>
 		<module>address-ejb</module>
@@ -21,7 +22,6 @@
 	        <module>tasks-ejb</module>
 	        <module>document-ejb</module>
 		<module>siauser-ejb</module>
-		<module>noconcurrency-tender-ejb</module>
         	<module>acquisition-importer-ejb</module>
         	<module>noteorder-ejb</module>
 		<module>data</module>
@@ -30,6 +30,8 @@
 		<module>objeto-aquisicao-ejb</module>
         	<module>integration-ejb</module>
         	<module>planotrabalhoanual-ejb</module>
+        	<module>ata-ejb</module>
+		<module>pedidoparcialmaterial-ejb</module>
 	</modules>
 	<dependencies>
 		<dependency>

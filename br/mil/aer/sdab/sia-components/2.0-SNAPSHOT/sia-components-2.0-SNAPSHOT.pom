@@ -12,12 +12,10 @@
     </parent>
     <modules>
         <module>supplier-components</module>
-        <module>tender-components</module>
         <module>purchaserequisition-components</module>        
 	<module>sia-layout</module>
 	<module>accounting-components</module>
 	<module>objetoaquisicao-components</module>
-	<module>noteorder-components</module>
 	<module>receiving-components</module>
 	<module>siauser-components</module>
 	<module>siaweb-components</module>

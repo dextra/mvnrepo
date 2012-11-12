@@ -14,16 +14,24 @@
 	</parent>
 	<dependencies>
 		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-api</artifactId>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.7</version>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>supplier-api</artifactId>
+			<artifactId>siauser-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noteorder-api</artifactId>
+			<artifactId>common-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>document-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 </project>

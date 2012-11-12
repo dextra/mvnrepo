@@ -14,12 +14,17 @@
 	<dependencies>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>objeto-aquisicao-api</artifactId>
+			<artifactId>sia-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>purchaserequisition-api</artifactId>
+			<artifactId>siauser-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>common-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

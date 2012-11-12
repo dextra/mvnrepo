@@ -20,9 +20,5 @@
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>siauser-api</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>accounting-api</artifactId>
-		</dependency>
 	</dependencies>
 </project>

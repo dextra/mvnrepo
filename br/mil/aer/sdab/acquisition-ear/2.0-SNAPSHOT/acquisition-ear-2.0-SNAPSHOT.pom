@@ -19,39 +19,19 @@
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>address-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>accounting-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>document-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>purchaserequisition-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>receiving-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tasks-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>supplier-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>sia-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>ata-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>pedidoparcialmaterial-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
@@ -62,6 +42,11 @@
             <artifactId>common-ejb</artifactId>
 			<type>ejb</type>
         </dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>sifare-pu</artifactId>
+			<type>ejb</type>
+		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>sia-pu</artifactId>
@@ -89,6 +74,16 @@
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>ata-ejb</artifactId>
+			<type>ejb</type>
+		</dependency>		
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>pedidoparcialmaterial-ejb</artifactId>
+			<type>ejb</type>
+		</dependency>				
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>document-ejb</artifactId>
 			<type>ejb</type>
 		</dependency>
@@ -114,11 +109,6 @@
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noconcurrency-tender-ejb</artifactId>
-			<type>ejb</type>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>tasks-ejb</artifactId>
 			<type>ejb</type>
 		</dependency>
@@ -139,10 +129,6 @@
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>objeto-aquisicao-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>objeto-aquisicao-ejb</artifactId>
 			<type>ejb</type>
 		</dependency>
@@ -160,11 +146,6 @@
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>purchaserequisition-web</artifactId>
-			<type>war</type>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-web</artifactId>
 			<type>war</type>
 		</dependency>
 		<dependency>
@@ -243,11 +224,6 @@
 							<groupId>br.mil.aer.sdab</groupId>
 							<artifactId>tasks-web</artifactId>
 							<contextRoot>/sia/tasks</contextRoot>
-						</webModule>
-						<webModule>
-							<groupId>br.mil.aer.sdab</groupId>
-							<artifactId>tender-web</artifactId>
-							<contextRoot>/sia/tender</contextRoot>
 						</webModule>
 						<webModule>
 							<groupId>br.mil.aer.sdab</groupId>

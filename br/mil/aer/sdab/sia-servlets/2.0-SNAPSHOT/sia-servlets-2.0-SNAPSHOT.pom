@@ -16,7 +16,6 @@
         <module>supplier-web</module>
         <module>purchaserequisition-web</module>
         <module>tasks-web</module>
-	<module>tender-web</module>	
         <module>siauser-web</module>
         <module>accounting-web</module>
 	<module>acquisition-importer-web</module>

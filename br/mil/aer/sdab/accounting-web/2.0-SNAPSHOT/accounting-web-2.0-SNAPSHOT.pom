@@ -13,12 +13,12 @@
     <dependencies>
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>accounting-api</artifactId>
+            <artifactId>sia-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>noteorder-api</artifactId>
+            <artifactId>siauser-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>

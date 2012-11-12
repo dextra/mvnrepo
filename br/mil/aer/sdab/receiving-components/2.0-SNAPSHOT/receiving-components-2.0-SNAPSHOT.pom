@@ -14,7 +14,12 @@
 	<dependencies>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>receiving-api</artifactId>
+			<artifactId>common-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>sia-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

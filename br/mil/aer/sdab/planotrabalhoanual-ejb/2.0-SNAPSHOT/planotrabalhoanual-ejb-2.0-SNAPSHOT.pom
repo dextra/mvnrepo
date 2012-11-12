@@ -18,10 +18,6 @@
 		</dependency>
 		<dependency>
 		    <groupId>br.mil.aer.sdab</groupId>
-		    <artifactId>receiving-api</artifactId>
-		</dependency>
-		<dependency>
-		    <groupId>br.mil.aer.sdab</groupId>
 		    <artifactId>integration-api</artifactId>
 		</dependency>
 		<dependency>

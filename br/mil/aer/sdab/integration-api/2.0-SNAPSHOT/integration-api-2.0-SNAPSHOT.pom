@@ -19,7 +19,7 @@
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>receiving-api</artifactId>
+			<artifactId>sia-api</artifactId>
 		</dependency>
 	</dependencies>
 </project>

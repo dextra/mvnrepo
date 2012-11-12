@@ -23,6 +23,12 @@
 			<artifactId>common-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>sia-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
@@ -31,11 +37,6 @@
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>siauser-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>purchaserequisition-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

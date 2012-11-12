@@ -23,21 +23,5 @@
 			<artifactId>sia-sequence</artifactId>
 			<type>ejb</type>
 		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noteorder-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>supplier-api</artifactId>
-		</dependency>
-		<dependency>
-            <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>tasks-api</artifactId>
-        </dependency>
 	</dependencies>
 </project>

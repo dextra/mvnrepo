@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>br.com.dextra</groupId>
+		<artifactId>components</artifactId>
+	        <version>1.0</version>
+	</parent>
+	<groupId>br.com.dextra.components</groupId>
+	<artifactId>validation</artifactId>
+	<version>1.0.0</version>
+	<name>DEXTRA - Validation</name>
+	<packaging>jar</packaging>
+	<description>
+		<![CDATA[Componente com classes utilit&aacute;rias para valida&ccedil;&atilde;o de informa&ccedil;&otilde;es.]]>
+	</description>
+	<developers>
+		<developer>
+			<id>fabio</id>
+			<name><![CDATA[F&aacute;bio Lima Santos]]></name>
+			<email>fabio@dextra-sw.com</email>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:svn:svn+ssh://svn/svn/dextra_library/tags/components/java/validation-1.0.0</connection>
+		<developerConnection>scm:svn:svn+ssh://svn/svn/dextra_library/tags/components/java/validation-1.0.0</developerConnection>
+		<url>https://dextranet.dextra.com.br/svn/dextra_library/tags/components/java/validation-1.0.0</url>
+	</scm>
+
+	<distributionManagement>
+		<site>
+			<id>site-trac</id>
+			<url>file:///projects/trac/dextra_library/htdocs/components</url>
+		</site>
+		<repository>
+			<id>dextra-repository</id>
+			<name>Dextra Repository</name>
+			<url>https://dextranet.dextra.com.br/archiva/repository/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>dextra-snapshot</id>
+			<name>Dextra Snapshot Repository</name>
+			<url>https://dextranet.dextra.com.br/archiva/repository/snapshots</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement> 
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<index>false</index>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<tagBase>svn+ssh://svn/svn/dextra_library/tags/components/java</tagBase>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

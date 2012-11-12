@@ -19,7 +19,12 @@
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>purchaserequisition-api</artifactId>
+			<artifactId>sia-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>document-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -34,11 +39,6 @@
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>sia-layout</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

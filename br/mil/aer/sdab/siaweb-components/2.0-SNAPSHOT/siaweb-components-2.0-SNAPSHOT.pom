@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.mil.aer.sdab</groupId>
@@ -19,17 +18,17 @@
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noteorder-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>common-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noteorder-components</artifactId>
+			<artifactId>document-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>purchaserequisition-components</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
@@ -39,10 +38,6 @@
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>siauser-api</artifactId>
 			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-components</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
@@ -62,8 +57,9 @@
 			<artifactId>tapestry-core</artifactId>
 		</dependency>
 		<dependency>
-        <groupId>br.mil.aer.sdab</groupId>
-        <artifactId>receiving-components</artifactId>
-    </dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>receiving-components</artifactId>
+		</dependency>
+
 	</dependencies>
 </project>

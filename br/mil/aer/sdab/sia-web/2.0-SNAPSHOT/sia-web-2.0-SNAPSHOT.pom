@@ -17,10 +17,14 @@
 			<artifactId>sia-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noteorder-api</artifactId>
+			<artifactId>ata-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>pedidoparcialmaterial-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -31,12 +35,14 @@
 
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noteorder-components</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>siauser-components</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>planotrabalhoanual-components</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>siauser-api</artifactId>
@@ -44,11 +50,11 @@
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-components</artifactId>
+			<artifactId>siaweb-components</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>siaweb-components</artifactId>
+			<artifactId>objetoaquisicao-components</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
@@ -70,6 +76,16 @@
 		<dependency>
             <groupId>br.mil.aer.sdab</groupId>
             <artifactId>receiving-components</artifactId>
+        </dependency>
+   		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>sia-pu</artifactId>
+			<type>ejb</type>
+			<scope>provided</scope>
+		</dependency>
+        <dependency>
+            <groupId>br.mil.aer.sdab</groupId>
+            <artifactId>accounting-components</artifactId>
         </dependency>
 	</dependencies>
 	<build>
@@ -133,6 +149,16 @@
 					<dependency>
 						<groupId>br.mil.aer.sdab</groupId>
 						<artifactId>sia-ejb</artifactId>
+						<version>${pom.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>br.mil.aer.sdab</groupId>
+						<artifactId>ata-ejb</artifactId>
+						<version>${pom.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>br.mil.aer.sdab</groupId>
+						<artifactId>pedidoparcialmaterial-ejb</artifactId>
 						<version>${pom.version}</version>
 					</dependency>
 					<dependency>

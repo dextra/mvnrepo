@@ -1,6 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.mil.aer.sdab</groupId>
 	<artifactId>tender-ejb</artifactId>
@@ -13,28 +12,24 @@
 	</parent>
 	<dependencies>
 		<dependency>
-		    <groupId>br.mil.aer.sdab</groupId>
-		    <artifactId>tender-api</artifactId>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>document-ejb</artifactId>
+			<type>ejb</type>
 		</dependency>
 		<dependency>
-	            <groupId>br.mil.aer.sdab</groupId>
-	            <artifactId>document-ejb</artifactId>
-                <type>ejb</type>
-        </dependency>
-        <dependency>
-            <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>tasks-ejb</artifactId>
-            <type>ejb</type>
-        </dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>tasks-ejb</artifactId>
+			<type>ejb</type>
+		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>sia-pu</artifactId>
-            <type>ejb</type>
+			<type>ejb</type>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>sia-sequence</artifactId>
-            <type>ejb</type>
+			<type>ejb</type>
 		</dependency>
 	</dependencies>
 </project>

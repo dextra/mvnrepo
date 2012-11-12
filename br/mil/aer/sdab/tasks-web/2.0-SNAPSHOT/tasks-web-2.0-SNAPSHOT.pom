@@ -13,13 +13,19 @@
     <dependencies>
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>tasks-api</artifactId>
+            <artifactId>common-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>common-api</artifactId>
+            <artifactId>document-api</artifactId>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+        	<groupId>br.mil.aer.sdab</groupId>
+        	<artifactId>common-ejb</artifactId>
+        	<type>ejb</type>
+        	<scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
@@ -36,12 +42,6 @@
             <groupId>br.mil.aer.sdab</groupId>
             <artifactId>sia-layout</artifactId>
         </dependency>
-        <dependency>
-            <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>tender-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
             <artifactId>sia-api</artifactId>

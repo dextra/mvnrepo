@@ -10,10 +10,6 @@
 		<version>2.0-SNAPSHOT</version>
 	</parent>
 	<dependencies>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>address-api</artifactId>
-		</dependency>
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
             <artifactId>sia-pu</artifactId>

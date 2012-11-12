@@ -4,7 +4,7 @@
 	<groupId>br.mil.aer.sdab</groupId>
 	<artifactId>implementation</artifactId>
 	<packaging>pom</packaging>
-    <version>2.0-SNAPSHOT</version>
+	<version>2.0-SNAPSHOT</version>
 	<name>FAB SIA Implementação</name>
 	<modules>
 		<module>apis</module>
@@ -25,6 +25,12 @@
 			<artifactId>junit</artifactId>
 			<version>4.0</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.3.1.GA</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -94,21 +100,14 @@
 				<artifactId>maven-mycontainer-plugin</artifactId>
 				<version>${mycontainer.version}</version>
 				<dependencies>
-                                        <dependency>
-                                                <groupId>postgresql</groupId>
-                                                <artifactId>postgresql</artifactId>
-                                                <version>8.0-312.jdbc3</version>
-                                        </dependency>
-					<!--dependency>
-						<groupId>br.mil.aer.sdab</groupId>
-						<artifactId>testcontainer-utils</artifactId>
-						<version>${pom.version}</version>
-					</dependency>
 					<dependency>
-						<groupId>br.mil.aer.sdab</groupId>
-						<artifactId>jms-support</artifactId>
-						<version>${pom.version}</version>
-					</dependency-->
+						<groupId>postgresql</groupId>
+						<artifactId>postgresql</artifactId>
+						<version>8.0-312.jdbc3</version>
+					</dependency>
+					<!--dependency> <groupId>br.mil.aer.sdab</groupId> <artifactId>testcontainer-utils</artifactId> <version>${pom.version}</version> 
+						</dependency> <dependency> <groupId>br.mil.aer.sdab</groupId> <artifactId>jms-support</artifactId> <version>${pom.version}</version> 
+						</dependency -->
 
 					<dependency>
 						<groupId>hsqldb</groupId>
@@ -145,22 +144,9 @@
 			</plugin>
 		</plugins>
 		<resources>
-			<!--
-				<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-				<excludes>
-				<exclude>**/*.tml</exclude>
-				</excludes>
-				</resource>
-				<resource>
-				<directory>src/main/resources</directory>
-				<filtering>false</filtering>
-				<includes>
-				<include>**/*.tml</include>
-				</includes>
-				</resource>
-			-->
+			<!-- <resource> <directory>src/main/resources</directory> <filtering>true</filtering> <excludes> <exclude>**/*.tml</exclude> 
+				</excludes> </resource> <resource> <directory>src/main/resources</directory> <filtering>false</filtering> <includes> <include>**/*.tml</include> 
+				</includes> </resource> -->
 		</resources>
 		<testResources>
 			<testResource>
@@ -171,19 +157,24 @@
 	</build>
 	<pluginRepositories>
 		<pluginRepository>
-           <id>apache-snapshots</id>
-           <url>https://repository.apache.org/content/groups/snapshots-group/</url>
-           <releases>
-             <enabled>false</enabled>
-           </releases>
-           <snapshots>
-             <enabled>true</enabled>
-           </snapshots>
-    </pluginRepository>
+			<id>apache-snapshots</id>
+			<url>https://repository.apache.org/content/groups/snapshots-group/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
 	</pluginRepositories>
 
 	<dependencyManagement>
 		<dependencies>
+            <dependency>
+                <groupId>net.sf.flexjson</groupId>
+                <artifactId>flexjson</artifactId>
+                <version>2.1</version>
+            </dependency>
 			<dependency>
 				<groupId>jasperreports</groupId>
 				<artifactId>jasperreports</artifactId>
@@ -194,7 +185,6 @@
 				<artifactId>persistence-api</artifactId>
 				<version>1.0</version>
 			</dependency>
-
 			<dependency>
 				<groupId>br.com.jsigner</groupId>
 				<artifactId>jsigner-annotations</artifactId>
@@ -220,7 +210,11 @@
 				<artifactId>commons-logging</artifactId>
 				<version>1.1.1</version>
 			</dependency>
-
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>3.2</version>
+			</dependency>
 			<dependency>
 				<groupId>org.mycontainer</groupId>
 				<artifactId>mycontainer-ejb</artifactId>
@@ -248,12 +242,13 @@
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>supplier-api</artifactId>
+				<artifactId>supplier-ejb</artifactId>
 				<version>${pom.version}</version>
+				<type>ejb</type>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>supplier-ejb</artifactId>
+				<artifactId>sifare-pu</artifactId>
 				<version>${pom.version}</version>
 				<type>ejb</type>
 			</dependency>
@@ -263,20 +258,9 @@
 				<version>${pom.version}</version>
 				<type>ejb</type>
 			</dependency>
-            <dependency>
-                <groupId>br.mil.aer.sdab</groupId>
-                <artifactId>common-ejb</artifactId>
-                <version>${pom.version}</version>
-                <type>ejb</type>
-            </dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>noconcurrency-tender-api</artifactId>
-				<version>${pom.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>noconcurrency-tender-ejb</artifactId>
+				<artifactId>common-ejb</artifactId>
 				<version>${pom.version}</version>
 				<type>ejb</type>
 			</dependency>
@@ -303,13 +287,13 @@
 				<artifactId>sia-web</artifactId>
 				<version>${pom.version}</version>
 				<type>war</type>
-			</dependency>			
+			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
 				<artifactId>planotrabalhoanual-web</artifactId>
 				<version>${pom.version}</version>
 				<type>war</type>
-			</dependency>			
+			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
 				<artifactId>accounting-web</artifactId>
@@ -344,16 +328,6 @@
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>tender-components</artifactId>
-				<version>${pom.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>noteorder-components</artifactId>
-				<version>${pom.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
 				<artifactId>siaweb-components</artifactId>
 				<version>${pom.version}</version>
 			</dependency>
@@ -372,11 +346,6 @@
 				<artifactId>purchaserequisition-web</artifactId>
 				<version>${pom.version}</version>
 				<type>war</type>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>purchaserequisition-api</artifactId>
-				<version>${pom.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
@@ -419,25 +388,9 @@
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>tender-api</artifactId>
-				<version>${pom.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
 				<artifactId>tender-ejb</artifactId>
 				<version>${pom.version}</version>
 				<type>ejb</type>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>tender-web</artifactId>
-				<version>${pom.version}</version>
-				<type>war</type>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>address-api</artifactId>
-				<version>${pom.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
@@ -461,11 +414,6 @@
 				<artifactId>sia-sequence</artifactId>
 				<version>${pom.version}</version>
 				<type>ejb</type>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>accounting-api</artifactId>
-				<version>${pom.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
@@ -503,7 +451,7 @@
 				<groupId>br.mil.aer.sdab</groupId>
 				<artifactId>common-ejb</artifactId>
 				<version>${pom.version}</version>
-                <type>ejb</type>
+				<type>ejb</type>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
@@ -515,12 +463,12 @@
 				<artifactId>integration-api</artifactId>
 				<version>${pom.version}</version>
 			</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>integration-ejb</artifactId>
+			<dependency>
+				<groupId>br.mil.aer.sdab</groupId>
+				<artifactId>integration-ejb</artifactId>
 				<version>${pom.version}</version>
-			<type>ejb</type>
-		</dependency>
+				<type>ejb</type>
+			</dependency>
 
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
@@ -531,11 +479,6 @@
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
 				<artifactId>communication-api</artifactId>
-				<version>${pom.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>tasks-api</artifactId>
 				<version>${pom.version}</version>
 			</dependency>
 			<dependency>
@@ -563,12 +506,17 @@
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>noteorder-api</artifactId>
+				<artifactId>sia-api</artifactId>
 				<version>${pom.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>sia-api</artifactId>
+				<artifactId>ata-api</artifactId>
+				<version>${pom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>br.mil.aer.sdab</groupId>
+				<artifactId>pedidoparcialmaterial-api</artifactId>
 				<version>${pom.version}</version>
 			</dependency>
 			<dependency>
@@ -578,14 +526,21 @@
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>planotrabalhoanual-ejb</artifactId>
+				<artifactId>ata-ejb</artifactId>
 				<version>${pom.version}</version>
 				<type>ejb</type>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>receiving-api</artifactId>
+				<artifactId>pedidoparcialmaterial-ejb</artifactId>
 				<version>${pom.version}</version>
+				<type>ejb</type>
+			</dependency>
+			<dependency>
+				<groupId>br.mil.aer.sdab</groupId>
+				<artifactId>planotrabalhoanual-ejb</artifactId>
+				<version>${pom.version}</version>
+				<type>ejb</type>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
@@ -593,11 +548,6 @@
 				<version>${pom.version}</version>
 				<type>ejb</type>
 			</dependency>
-		        <dependency>
-                                <groupId>br.mil.aer.sdab</groupId>
-                                <artifactId>noteorder-components</artifactId>
-                                <version>${pom.version}</version>
-                        </dependency>
 
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
@@ -610,11 +560,6 @@
 				<artifactId>sia-ejb</artifactId>
 				<version>${pom.version}</version>
 				<type>ejb</type>
-			</dependency>
-			<dependency>
-				<groupId>br.mil.aer.sdab</groupId>
-				<artifactId>objeto-aquisicao-api</artifactId>
-				<version>${pom.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>br.mil.aer.sdab</groupId>
@@ -632,17 +577,17 @@
 		</dependencies>
 	</dependencyManagement>
 
-  <repositories>
+	<repositories>
 		<repository>
-      <id>local_repository</id>
-      <url>file:///projects/shared/fab_reembolsavel/repository</url>
-      <releases>
-          <enabled>true</enabled>
-      </releases>
-      <snapshots>
-          <enabled>true</enabled>
-      </snapshots>
-	 </repository>
+			<id>local_repository</id>
+			<url>file:///projects/shared/fab_reembolsavel/repository</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 
 	<reporting>

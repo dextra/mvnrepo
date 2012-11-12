@@ -12,11 +12,15 @@
 	<dependencies>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tasks-api</artifactId>
+			<artifactId>common-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>common-api</artifactId>
+			<artifactId>sia-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>siauser-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>

@@ -14,22 +14,13 @@
 	<dependencies>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noteorder-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>receiving-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>common-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tender-components</artifactId>
+			<artifactId>sia-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
@@ -55,10 +46,6 @@
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>receiving-components</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>noteorder-components</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>

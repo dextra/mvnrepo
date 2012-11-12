@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>br.com.dextra.components</groupId>
+    <artifactId>parse-utils</artifactId>
+    <version>1.0.1</version>
+    <name>DEXTRA - Parse Utilities</name>
+    <packaging>jar</packaging>
+    <description>
+        Componente com classes utilitarias que facilitam o parse de strings para diversos tipos.
+    </description>
+    
+    <scm>
+        <connection>scm:svn:https://dextranet.dextra.com.br/svn/dextra_library/trunk/devel/implementation/components/java</connection>
+        <developerConnection>scm:svn:https://dextranet.dextra.com.br/svn/dextra_library/trunk/devel/implementation/components/java</developerConnection>
+        <url>https://dextranet.dextra.com.br/svn/dextra_library/trunk/devel/implementation/components/java</url>
+    </scm>
+    
+    <distributionManagement>
+        <site>
+            <id>site-trac</id>
+            <url>file:///projects/trac/dextra_library/htdocs/components</url>
+        </site>
+        <repository>
+            <id>dextra-repository</id>
+            <name>Dextra Repository</name>
+            <url>https://dextranet.dextra.com.br/archiva/repository/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>dextra-snapshot</id>
+            <name>Dextra Snapshot Repository</name>
+            <url>https://dextranet.dextra.com.br/archiva/repository/snapshots</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.3</version>
+        </dependency>
+         
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <index>false</index>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <tagBase>https://dextranet.dextra.com.br/svn/dextra_library/tags/components/java</tagBase>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>

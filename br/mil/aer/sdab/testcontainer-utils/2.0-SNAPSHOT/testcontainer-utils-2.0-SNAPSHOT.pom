@@ -12,13 +12,12 @@
 	</parent>
 	<dependencies>
 		<dependency>
-			<groupId>hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<scope>provided</scope>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>common-api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>tasks-api</artifactId>
+			<groupId>hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>

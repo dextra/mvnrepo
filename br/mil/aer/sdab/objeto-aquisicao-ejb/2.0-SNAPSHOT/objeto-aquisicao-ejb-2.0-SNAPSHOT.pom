@@ -12,10 +12,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
-			<artifactId>objeto-aquisicao-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>common-api</artifactId>
 		</dependency>
 		<dependency>
@@ -27,7 +23,12 @@
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>
 			<artifactId>sia-pu</artifactId>
-            <type>ejb</type>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>sifare-pu</artifactId>
+			<type>ejb</type>
 		</dependency>
 		<dependency>
 			<groupId>br.mil.aer.sdab</groupId>

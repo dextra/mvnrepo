@@ -48,10 +48,6 @@
             <groupId>br.mil.aer.sdab</groupId>
             <artifactId>receiving-components</artifactId>
         </dependency>
-        <dependency>
-            <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>noteorder-components</artifactId>
-        </dependency>
          <dependency>
             <groupId>br.mil.aer.sdab</groupId>
             <artifactId>objetoaquisicao-components</artifactId>
@@ -64,10 +60,6 @@
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
             <artifactId>accounting-components</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>br.mil.aer.sdab</groupId>
-            <artifactId>tender-components</artifactId>
         </dependency>
         <dependency>
             <groupId>br.mil.aer.sdab</groupId>
