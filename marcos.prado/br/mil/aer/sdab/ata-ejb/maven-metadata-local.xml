@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>br.mil.aer.sdab</groupId>
+  <artifactId>ata-ejb</artifactId>
+  <version>2.0-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>2.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20110411112836</lastUpdated>
+  </versioning>
+</metadata>

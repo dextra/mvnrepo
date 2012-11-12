@@ -1,0 +1,7 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>postgresql</groupId>
+  <artifactId>postgresql</artifactId>
+  <name>PostgreSQL JDBC Driver</name>
+  <version>8.0-312.jdbc3</version>
+</project>

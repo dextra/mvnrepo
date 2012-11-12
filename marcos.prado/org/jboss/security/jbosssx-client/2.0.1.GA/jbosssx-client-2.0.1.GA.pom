@@ -1,0 +1,94 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>jbosssx-aggregator</artifactId>
+    <groupId>org.jboss.security</groupId>
+    <version>2.0.1.GA</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jbosssx-client</artifactId>
+  <name>JBoss Security Client</name>
+  <version>2.0.1.GA</version>
+  <description>JBoss Security Client Library</description>
+  <url>http://www.jboss.org</url>
+  <build>
+    <sourceDirectory>../jbosssx/src/main</sourceDirectory>
+    <outputDirectory>../jbosssx/target/classes</outputDirectory>
+    <finalName>${artifactId}</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <archive>
+            <manifestFile>../jbosssx/src/etc/default.mf</manifestFile>
+          </archive>
+          <classesDirectory>../jbosssx/target/classes</classesDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+          <execution>
+            <id>buildjar</id>
+            <phase>package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <jar jarfile="${basedir}/target/jbosssx-client-2.0.1.GA.jar" update="true" manifest="${basedir}/../jbosssx/src/etc/default.mf">
+                  <fileset dir="${basedir}/../jbosssx/target/classes">
+                    <exclude name="META-INF/MANIFEST.MF"></exclude>
+                    <include name="org/jboss/crypto/JBossSXProvider.class"></include>
+                    <include name="org/jboss/crypto/digest/*"></include>
+                    <include name="org/jboss/security/*"></include>
+                    <include name="org/jboss/security/auth/callback/*"></include>
+                    <include name="org/jboss/security/auth/login/*"></include>
+                    <include name="org/jboss/security/client/*"></include>
+                    <exclude name="org/jboss/security/auth/login/XMLLoginConfig.class"></exclude>
+                    <exclude name="org/jboss/security/auth/login/XMLLoginConfigMBean.class"></exclude>
+                    <include name="org/jboss/security/jndi/LoginInitialContextFactory.class"></include>
+                    <include name="org/jboss/security/jndi/JndiLoginInitialContextFactory.class"></include>
+                    <include name="org/jboss/security/plugins/PBEUtils.class"></include>
+                    <include name="org/jboss/security/ssl/ClientSocketFactory.class"></include>
+                    <include name="org/jboss/security/ssl/RMISSLClientSocketFactory.class"></include>
+                    <include name="org/jboss/security/plugins/*SecurityContext*.class"></include>
+                  </fileset>
+                  <fileset file="${basedir}/../jbosssx/JBossORG-EULA.txt"></fileset>
+                </jar>
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+        <inherited>true</inherited>
+      </plugin>
+      <plugin>
+        <groupId>org.jboss.maven.plugins</groupId>
+        <artifactId>maven-jboss-deploy-plugin</artifactId>
+        <version>1.4</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jboss-deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <groupId>jboss</groupId>
+          <license>lgpl</license>
+          <jbossDeployRoot>${jboss.repository.root}</jbossDeployRoot>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

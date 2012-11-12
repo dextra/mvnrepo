@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="SIA">
+  <publishDate position="left" format="dd-MM-yyyy" />
+  <skin>
+    <groupId>br.com.dextra.lib</groupId>
+    <artifactId>maven-dextra-skin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </skin>
+  <body>
+    <links>
+      <item name="Dextra" href="http://www.dextra.com.br" />
+      <item name="Wiki" href="http://dextranet.dextra.com.br/tracker/fab_sia" />
+    </links>
+    <menu name="Módulo" inherit="bottom" ref="modules">
+      <item name="FAB SIA Acquisition EAR Assembly" href="acquisition-ear/index.html" />
+      <item name="FAB SIA User EAR Assembly" href="siauser-ear/index.html" />
+    </menu>
+    <menu inherit="bottom" ref="reports" />
+  </body>
+</project>

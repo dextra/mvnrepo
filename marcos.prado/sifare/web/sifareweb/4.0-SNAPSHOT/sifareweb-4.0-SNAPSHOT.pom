@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>sifare.web</groupId>
+		<artifactId>servlets</artifactId>
+		<version>4.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>sifareweb</artifactId>
+	<packaging>war</packaging>
+	<name>Sifareweb - Sifareweb</name>
+	<dependencies>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>struts</groupId>
+			<artifactId>struts</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>sifare.web</groupId>
+			<artifactId>sifareweb-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>

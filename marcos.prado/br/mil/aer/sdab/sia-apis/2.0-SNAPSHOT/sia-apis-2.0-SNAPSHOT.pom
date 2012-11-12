@@ -1,0 +1,52 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>br.mil.aer.sdab</groupId>
+   <artifactId>sia-apis</artifactId>
+   <packaging>pom</packaging>
+   <name>FAB SIA APIs</name>
+   <parent>
+      <groupId>br.mil.aer.sdab</groupId>
+      <artifactId>implementation</artifactId>
+      <version>2.0-SNAPSHOT</version>
+   </parent>
+   <dependencies>
+      <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <scope>provided</scope>
+            <version>1.1</version>
+      </dependency>  
+ 		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+   </dependencies>
+
+   <modules>
+      <module>common-api</module>
+      <module>address-api</module>
+      <module>contact-api</module>
+      <module>document-api</module>
+      <module>accounting-api</module>
+      <module>supplier-api</module>
+      <module>purchaserequisition-api</module>
+      <module>tender-api</module>
+      <module>tasks-api</module>
+      <module>siauser-loginmodule</module>
+      <module>siauser-api</module>
+      <module>noconcurrency-tender-api</module>
+      <module>acquisition-importer-api</module>
+      <module>noteorder-api</module>
+      <module>receiving-api</module>
+      <module>objeto-aquisicao-api</module>
+      <module>testcontainer-utils</module>
+      <module>jms-support</module>
+      <module>integration-api</module>
+      <module>sia-api</module>	
+      <module>planotrabalhoanual-api</module>	
+      <module>ata-api</module>	
+      <module>pedidoparcialmaterial-api</module>	
+   </modules>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>sifare</groupId>
+  <artifactId>sifare-desktop</artifactId>
+  <version>4.0-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>4.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20110107111539</lastUpdated>
+  </versioning>
+</metadata>

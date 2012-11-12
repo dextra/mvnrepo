@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.mil.aer.sdab</groupId>
+	<artifactId>ata-ejb</artifactId>
+	<packaging>ejb</packaging>
+	<name>FAB PLANO TRABALHO ANUAL EJB Implementation</name>
+	<parent>
+		<groupId>br.mil.aer.sdab</groupId>
+		<artifactId>sia-ejbs</artifactId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+		    <groupId>br.mil.aer.sdab</groupId>
+		    <artifactId>ata-api</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>br.mil.aer.sdab</groupId>
+		    <artifactId>integration-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>br.mil.aer.sdab</groupId>
+			<artifactId>sia-pu</artifactId>
+			<type>ejb</type>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>br.com.dextra.jbossemb</groupId>
+  <artifactId>dextra-jbossemb-test</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <buildNumber>1</buildNumber>
+      <timestamp>20080304.161905</timestamp>
+    </snapshot>
+    <lastUpdated>20080304161911</lastUpdated>
+  </versioning>
+</metadata>

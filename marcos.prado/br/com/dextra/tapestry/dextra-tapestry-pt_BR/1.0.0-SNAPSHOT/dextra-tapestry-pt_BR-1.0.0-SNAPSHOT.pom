@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.dextra.tapestry</groupId>
+	<artifactId>dextra-tapestry-pt_BR</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+    
+    <parent>
+       <groupId>br.com.dextra.tapestry</groupId>
+       <artifactId>dextra-tapestry</artifactId>
+       <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+	<name>Dextra Tapestry pt_BR Translations</name>
+
+    <!--
+	<dependencies>
+        <dependency>
+            <groupId>org.apache.tapestry</groupId>
+            <artifactId>tapestry-core</artifactId>
+            <version>${tapestry-release-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+      <extensions>
+        <extension>
+          <groupId>org.apache.maven.wagon</groupId>
+          <artifactId>wagon-webdav</artifactId>
+          <version>1.0-beta-2</version>
+        </extension>
+      </extensions>
+    </build>
+    <properties>
+        <tapestry-release-version>5.0.5</tapestry-release-version>
+    </properties>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>deployment.webdav</id>
+      <name>Dextra Snapshots Repository</name>
+      <url>dav:http://172.16.129.2:8080/archiva/repository/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  -->
+</project>

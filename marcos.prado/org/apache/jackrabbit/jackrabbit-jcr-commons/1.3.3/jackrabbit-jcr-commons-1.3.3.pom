@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <parent>
+    <artifactId>jackrabbit</artifactId>
+    <groupId>org.apache.jackrabbit</groupId>
+    <version>1.3.3</version>
+    <relativePath>..</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jackrabbit-jcr-commons</artifactId>
+  <name>Jackrabbit JCR Commons</name>
+  <version>1.3.3</version>
+  <description>General purpose classes for use with the JCR API</description>
+  <scm>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbit-jcr-commons</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbit-jcr-commons</developerConnection>
+    <url>http://svn.apache.org/viewvc/jackrabbit/trunk/jackrabbit-jcr-commons</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>javax.jcr</groupId>
+      <artifactId>jcr</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>
